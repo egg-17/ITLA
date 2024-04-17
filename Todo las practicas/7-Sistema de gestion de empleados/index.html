@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="boot.css" />
+    <title>Adm-empleados</title>
+  </head>
+  <body>
+    <header class="container-fluid bg-success p-3">
+      <h2 class="text-white">ADM-Empleados 😊❤️</h2>
+    </header>
+    <main class="d-grid container-fluid">
+     <div class="row p-4">
+      <form action="" class="empleados-form  col-12 col-lg-4 p-4 mx-auto mx-lg-0">
+        <h3 class="text-capitalize text-center">Agrega empleados</h2>
+        <div class="mb-3">
+          <label for="nombre" class="form-label">Nombre:</label>
+          <input
+            type="text"
+            name=""
+            id="nombre"
+            class="form-control"
+            placeholder=""
+            aria-describedby="helpId"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="apellidos" class="form-label">Apellidos:</label>
+          <input
+            type="text"
+            name=""
+            id="apellidos"
+            class="form-control"
+            placeholder=""
+            aria-describedby="helpId"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="cargo" class="form-label">Cargo:</label>
+
+          <select class="form-select form-select-md form-control" name="" id="cargo">
+            <option value="" selected hidden>Seleciona un cargo</option>
+            <option value="front-end">Front-end</option>
+            <option value="back-end">Back-end</option>
+            <option value="ui/ux">UI/UX</option>
+            <option value="qa">QA</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <label for="salario" class="form-label">Salario:</label>
+          <input
+            type="number"
+            name=""
+            id="salario"
+            class="form-control"
+            placeholder=""
+            aria-describedby="helpId"
+          />
+        </div>
+        
+        <div class="mb-3">
+          <button class="btn btn-success w-100">Agregar</button>
+        </div>
+      </form>
+
+      <section class="col-12 col-lg-8  p-lg-4">
+        <h3 class="text-center m-3">Lista de empleados</h3>
+        <div
+          class="table-responsive"
+        >
+          <table
+            class="table table-primary "
+          >
+            <thead class="">
+              <tr>
+                <th scope="col">Nombre</th>
+                <th scope="col">Apellidos</th>
+                <th scope="col">Cargo</th>
+                <th scope="col">Salario</th>
+                <th scope="col"></th>
+              </tr>
+            </thead>
+            <tbody id="tbody">
+             
+            </tbody>
+          </table>
+        </div>
+        <div class="text-end p-2">
+          <span class="fs-5 pago-total">Total a pagar de sueldo: 0 </span>
+        </div>
+        
+      </section>
+     </div>
+    </main> 
+    <script src="main.js"></script>
+  </body>
+</html>
