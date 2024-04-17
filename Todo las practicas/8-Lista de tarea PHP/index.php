@@ -10,12 +10,11 @@ function initSession()
 
 initSession();
 
-// Manejar las acciones
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (isset($_POST['add_task'])) {
         $task = [
             'description' => $_POST['task'],
-            'details' => $_POST['details'], // Agregar descripción
+            'details' => $_POST['details'], 
             'completed' => false
         ];
         array_push($_SESSION['tasks'], $task);
